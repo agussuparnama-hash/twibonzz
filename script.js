@@ -54,8 +54,8 @@ function draw(){
  ctx.lineWidth=8;
  ctx.strokeStyle='white';
  ctx.fillStyle='#0048B5';
- ctx.strokeText(text,540,95);
- ctx.fillText(text,540,95);
+ ctx.strokeText(text,540,130);
+ ctx.fillText(text,540,130);
 }
 function downloadTwibbon(){
  draw();

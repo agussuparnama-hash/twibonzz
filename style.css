@@ -1,0 +1,6 @@
+*{box-sizing:border-box}body{margin:0;background:#0f5fb7;font-family:Poppins,sans-serif;padding:20px}
+.wrap{display:flex;gap:20px;justify-content:center;align-items:flex-start;flex-wrap:wrap}
+.panel{background:#fff;padding:20px;border-radius:15px;width:320px}
+input,button{width:100%;padding:10px;margin:10px 0}
+button{background:#0056b3;color:#fff;border:none;border-radius:8px;font-weight:bold;cursor:pointer}
+canvas{width:700px;max-width:100%;background:transparent;border-radius:15px;box-shadow:0 10px 30px rgba(0,0,0,.3)}

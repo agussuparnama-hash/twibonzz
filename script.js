@@ -11,8 +11,8 @@ let z=1;
 const FOTO={
  x:540,
  y:370,
- radius:330,
- base:700
+ radius:380,
+ base:800
 };
 
 let px=FOTO.x;

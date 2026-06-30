@@ -71,19 +71,52 @@ function draw(){
  ctx.drawImage(frame,0,0,1080,1080);
 
  let text=(nama.value||"NAMA PESERTA").toUpperCase();
- let size=56;
- do{
-   ctx.font=size+"px Luckiest Guy";
-   if(ctx.measureText(text).width<760)break;
-   size--;
- }while(size>26);
+ // =============================
+// NAMA PESERTA
+// =============================
 
- ctx.textAlign="center";
- ctx.lineWidth=10;
- ctx.strokeStyle="#ffffff";
- ctx.fillStyle="#004ea8";
- ctx.strokeText(text,540,95);
- ctx.fillText(text,540,95);
+let text = (nama.value || "NAMA PESERTA").toUpperCase();
+
+// Ukuran awal lebih kecil
+let size = 42;
+
+// Mengecil otomatis jika nama panjang
+do{
+
+    ctx.font = "bold " + size + "px Poppins";
+
+    if(ctx.measureText(text).width < 620){
+
+        break;
+
+    }
+
+    size--;
+
+}while(size > 24);
+
+// Posisi tulisan
+const namaX = 540;
+const namaY = 255;
+
+// Efek tulisan
+ctx.textAlign = "center";
+ctx.textBaseline = "middle";
+
+ctx.lineWidth = 7;
+ctx.strokeStyle = "#FFFFFF";
+
+ctx.fillStyle = "#004EA8";
+
+ctx.shadowColor = "rgba(0,0,0,0.25)";
+ctx.shadowBlur = 8;
+ctx.shadowOffsetY = 2;
+
+ctx.strokeText(text, namaX, namaY);
+ctx.fillText(text, namaX, namaY);
+
+ctx.shadowBlur = 0;
+ctx.shadowOffsetY = 0;
 }
 
 function downloadPNG(){

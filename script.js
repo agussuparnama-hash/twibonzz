@@ -83,7 +83,7 @@ let size = 42;
 // Mengecil otomatis jika nama panjang
 do{
 
-    ctx.font = "bold " + size + "px Poppins";
+   ctx.font = "bold " + size + "px 'Baloo 2'";
 
     if(ctx.measureText(text).width < 620){
 
@@ -97,7 +97,7 @@ do{
 
 // Posisi tulisan
 const namaX = 540;
-const namaY = 255;
+const namaY = 270;
 
 // Efek tulisan
 ctx.textAlign = "center";

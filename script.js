@@ -34,10 +34,11 @@ function draw(){
  ctx.clearRect(0,0,1080,1080);
  if(photo){
    ctx.save();
-   ctx.beginPath();
-   ctx.arc(540,390,290,0,Math.PI*2);
-   ctx.clip();
-   const sc=Math.max(600/photo.width,600/photo.height)*zoom;
+ctx.beginPath();
+ctx.arc(540,390,330,0,Math.PI*2);   // radius diperbesar dari 290 menjadi 330
+ctx.clip();
+
+const sc=Math.max(680/photo.width,680/photo.height)*zoom;
    const w=photo.width*sc,h=photo.height*sc;
    ctx.drawImage(photo,posX-w/2,posY-h/2,w,h);
    ctx.restore();
